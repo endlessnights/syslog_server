@@ -1,0 +1,10 @@
+version: "3"
+services:
+  syslog_srv:
+    build: .
+    container_name: syslog_srv
+    volumes:
+      - ./volume/logs:/app/logs
+    network_mode: host
+    restart: always
+
